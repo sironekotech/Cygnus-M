@@ -58,39 +58,39 @@
 
         default_layer {
             bindings = <
-&lt 6 ESC  &kp Q     &kp W     &kp E                    &kp R           &kp T                                           &kp Y        &kp U  &kp I      &kp O    &kp P        &kp BSPC
-&kp TAB    &kp A     &kp S     &kp D                    &kp F           &kp G        &mkp MCLK          &kp UP_ARROW    &kp H        &kp J  &kp K      &lt 4 L  &lt 5 MINUS  &kp ENTER
-&kp LSHFT  &kp Z     &kp X     &kp C                    &kp V           &kp B        &kp DELETE         &kp DOWN_ARROW  &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH     &kp RSHFT
-&kp LCTRL  &kp LGUI  &kp LALT  &kp LANG_ZENKAKUHANKAKU  &kp LEFT_ARROW  &lt 1 SPACE  &kp RIGHT_ARROW    &kp BACKSPACE   &lt 2 ENTER                             &kp DEL      &kp RCTRL
+&lt 6 ESC       &lt 7 Q         &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &lt 3 I         &lt 7 O         &kp P           &kp BSPC
+&kp TAB         &kp A           &kp S           &lt 3 D         &lt 7 F         &kp G           &mkp MCLK       &kp UP          &kp H           &kp J           &lt 3 K         &lt 4 L         &lt 5 RET       &kp RET
+&kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B           &kp DEL         &kp DOWN        &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+&kp LCTL        &kp LGUI        &kp LALT        &kp LANG5       &kp LGUI        &mt LALT LANG2  &mt LSHFT TAB   &lt 2 SPACE     &lt 1 LANG1     &kp DEL         &kp RCTL
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
-&trans  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5                     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   &trans
-&trans  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp F11  &trans  &trans  &trans  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &kp F11  &trans
-&trans  &kp F12  &trans  &trans  &trans  &trans   &trans    &trans  &trans                          &kp F12  &trans
+&trans               &kp N1               &kp N2               &kp N3               &kp N4               &kp N5               &kp N6               &kp N7               &kp N8               &kp N9               &kp N0               &trans
+&trans               &mt LCTL EQUAL       &kp LBKT             &kp FSLH             &kp MINUS            &kp INT1             &trans               &trans               &kp SEMI             &kp SQT              &kp RBKT             &kp NON_US_HASH      &kp INT3             &trans
+&trans               &kp LS(COMMA)        &kp LS(DOT)          &kp LS(FSLH)         &kp LS(MINUS)        &kp LS(INT1)         &trans               &trans               &kp LS(SEMI)         &kp LS(SQT)          &kp LS(RBKT)         &kp LS(NON_US_HASH)  &kp LS(INT3)         &trans
+&trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans
             >;
         };
 
-        NUM {
+        SHIFT_SYMBOL {
             bindings = <
-&trans  &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT            &trans
-&trans  &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH          &trans
-&trans  &trans                      &trans           &trans           &trans           &trans        &trans                     &trans          &trans                                                                     &kp PIPE               &trans
+&trans               &kp LS(N1)           &kp LS(N2)           &kp LS(N3)           &kp LS(N4)           &kp LS(N5)           &kp LS(N6)           &kp LS(N7)           &kp LS(N8)           &kp LS(N9)           &kp LG(INT3)         &trans
+&trans               &kp LS(EQUAL)        &kp LS(LBKT)         &kp LS(FSLH)         &kp LS(MINUS)        &kp LS(INT1)         &trans               &trans               &kp LS(SEMI)         &kp LS(SQT)          &kp LS(RBKT)         &kp LS(NON_US_HASH)  &kp LS(INT3)         &trans
+&trans               &kp LSHFT            &kp LGUI             &kp LALT             &none                &none                &trans               &trans               &kp SPACE            &kp LANG1            &trans               &trans               &kp DEL              &trans
+&trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans               &trans
             >;
         };
 
-        ARROW {
+        NAV {
             bindings = <
-&trans  &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans  &trans
+&trans            &kp ESC           &kp LG(R)         &kp LG(K)         &kp LG(U)         &kp LG(Y)         &kp LG(SEMI)      &none             &kp UP            &none             &none             &trans
+&trans            &kp LG(A)         &trans            &kp LS(FSLH)      &kp LS(N1)        &kp LG(Z)         &trans            &trans            &kp LG(KP_MINUS)  &kp LEFT          &kp DOWN          &kp RIGHT         &none             &trans
+&trans            &kp LSHFT         &kp LGUI          &kp LG(C)         &kp LG(V)         &kp LG(S)         &trans            &trans            &none             &kp LANG1         &none             &none             &kp DEL           &trans
+&trans            &trans            &trans            &trans            &trans            &kp LC(J)         &trans            &trans            &trans            &trans            &trans
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -121,6 +121,23 @@
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kt KP_N4  &trans    &trans  &trans        &trans        &trans        &trans        &bt BT_CLR      &bt BT_CLR
 &trans  &trans  &trans        &trans        &trans        &trans     &trans    &trans  &trans                                                  &bt BT_CLR_ALL  &bt BT_CLR_ALL
             >;
+        };
+
+        FUNCTION {
+            bindings = <
+&trans             &kp LS(LG(LEFT))   &kp LS(LG(RIGHT))  &kp LC(LS(T))      &kp F5             &kp F12            &kp F2             &kp F3             &kp F4             &kp F5             &kp F6             &trans
+&trans             &kp LG(LEFT)       &kp LG(RIGHT)      &kp LC(LA(U))      &kp LC(LA(I))      &kp F2             &trans             &trans             &kp F8             &kp F9             &kp F10            &kp F11            &kp F12            &trans
+&trans             &kp LC(W)          &kp LC(T)          &kp LC(LA(J))      &kp LC(LA(K))      &trans             &trans             &trans             &trans             &trans             &none              &none              &none              &trans
+&trans             &trans             &trans             &trans             &kp LC(LA(LEFT))   &kp LC(LA(RET))    &kp LC(LA(RIGHT))  &kp LS(LG(N4))     &kp LA(RIGHT)      &trans             &trans
+            >;
+        };
+
+        extra_1 {
+            status = "reserved";
+        };
+
+        extra_2 {
+            status = "reserved";
         };
     };
 };
