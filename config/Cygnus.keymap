@@ -99,7 +99,7 @@
         MOUSE {
             bindings = <
 &trans  &trans       &trans       &trans           &trans             &trans                         &kp LG(R)  &trans           &trans             &trans       &trans       &trans
-&trans  &lt 5 SPACE  &lt 4 SPACE  &mo 5            &mkp MB2           &mkp MB3   &mkp MB3    &trans  &mkp MB3   &mkp MB1         &mkp MB2           &lt 4 SPACE  &lt 5 SPACE  &trans
+&trans  &lt 5 SPACE  &mkp MB2     &mo 5            &mkp MB1           &mkp MB3   &mkp MB3    &trans  &mkp MB3   &mkp MB1         &mkp MB2           &lt 4 SPACE  &lt 5 SPACE  &trans
 &trans  &trans       &trans       &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LG(R)  &trans      &trans  &trans     &mkp MB4         &mkp MB5           &trans       &trans       &trans
 &trans  &trans       &trans       &trans           &trans             &trans     &trans      &trans  &trans                                                      &trans       &trans
             >;
